@@ -18,8 +18,8 @@
 
 [colors]
 
-background = #fff
-foreground = #000
+background = #77000000
+foreground = #ffffff
 ;foreground = ${xrdb:foreground:#fff}
 ;background = ${xrdb:background:#000}
 
@@ -29,7 +29,7 @@ foreground = #000
 ; | |_) | (_| | |  \__ \
 ; |_.__/ \__,_|_|  |___/
 
-[bar/bar]
+[bar/main]
 enable-ipc=true
 height = 40
 width = 98%
@@ -37,6 +37,48 @@ offset-x = 1%
 padding = 5
 ;bottom = true
 radius-bottom = 15
+
+background = ${colors.background}
+;background = ${colors.primary}
+foreground = ${colors.foreground}
+;border-size = 10
+border-top-size = 0
+border-bottom-size = 0
+border-color = #0000
+
+line-size = 2
+
+font-0=SF Pro Display:style=Regular:size=12;2
+font-1=SF Pro Display:style=Semibold:size=12;2
+font-2=Material Icons:size=13;4
+font-3=font\-logos:size=10;2
+font-4=FontAwesome5Brands:size=11;1
+font-5=IPAGothic:size=11;3
+
+modules-right = spotify pulseaudio time powermenu
+
+; i3
+; modules-left = launcher i3 xwindow
+; scroll-up = i3wm-wsnext
+; scroll-down = i3wm-wsprev
+; wm-restack = i3
+
+; bspwm
+modules-left = launcher bspwm xwindow
+scroll-up = bspwm-wsnext
+scroll-down = bspwm-wsprev
+wm-restack = bspwm
+ override-redirect = false
+
+[bar/second]
+enable-ipc=true
+height = 40
+width = 98%
+offset-x = 1%
+padding = 5
+;bottom = true
+radius-bottom = 15
+monitor = DP-4
 
 background = ${colors.background}
 ;background = ${colors.primary}
