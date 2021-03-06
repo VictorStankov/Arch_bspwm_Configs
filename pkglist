@@ -1,4 +1,5 @@
 alacritty
+bspwm
 codeblocks
 discord
 dmenu
@@ -16,3 +17,5 @@ pycharm-community-edition
 pyenv
 pyenv-virtualenv
 spotify
+sxhkd
+xorg
