@@ -3,6 +3,7 @@ bspwm
 codeblocks
 discord
 dmenu
+feh
 firefox
 flameshot
 git
@@ -11,11 +12,17 @@ lf
 nautilus
 npm
 nvidia
+otf-san-francisco
 pgadmin4
+picom
 polybar
+pulseaudio
 pycharm-community-edition
 pyenv
 pyenv-virtualenv
 spotify
 sxhkd
+ttf-font-awesome
+ttf-font-logos
+ttf-material-icons-git
 xorg
