@@ -90,6 +90,10 @@ border-color = #0000
 
 line-size = 2
 
+tray-position = center
+tray-padding = 5
+tray-background = ${colors.alt.background}
+
 font-0=SF Pro Display:style=Regular:size=12;2
 font-1=SF Pro Display:style=Semibold:size=12;2
 font-2=Material Icons:size=13;4
@@ -97,7 +101,7 @@ font-3=font\-logos:size=10;2
 font-4=FontAwesome5Brands:size=11;1
 font-5=IPAGothic:size=11;3
 
-modules-right = spotify pulseaudio time powermenu
+modules-right = pulseaudio time powermenu
 
 ; i3
 ; modules-left = launcher i3 xwindow
@@ -196,11 +200,11 @@ label-urgent-padding = 5
 label-occupied = %index%
 label-occupied-padding = 5
 
-;ws-icon-0 = 1;
-;ws-icon-1 = 2;
-;ws-icon-2 = 3;
-;ws-icon-9 = 10;
-;ws-icon-default = 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-9 = 10;
+ws-icon-default = 
 
 [module/wlan]
 type = internal/network
