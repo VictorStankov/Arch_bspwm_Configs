@@ -20,8 +20,8 @@
 
 background = #77000000
 foreground = #ffffff
-;foreground = ${xrdb:foreground:#fff}
-;background = ${xrdb:background:#000}
+#foreground = ${xrdb:foreground:#fff}
+#background = ${xrdb:background:#000}
 
 ;  _                    
 ; | |__   __ _ _ __ ___ 
@@ -92,7 +92,7 @@ line-size = 2
 
 tray-position = center
 tray-padding = 5
-tray-background = ${colors.alt.background}
+tray-background = ${colors.background}
 
 font-0=SF Pro Display:style=Regular:size=12;2
 font-1=SF Pro Display:style=Semibold:size=12;2
@@ -110,7 +110,7 @@ modules-right = pulseaudio time powermenu
 ; wm-restack = i3
 
 ; bspwm
-modules-left = launcher bspwm xwindow
+modules-left = launcher bspwm
 scroll-up = bspwm-wsnext
 scroll-down = bspwm-wsprev
 wm-restack = bspwm
@@ -314,16 +314,16 @@ menu-3-0 = 
 menu-3-0-exec = poweroff
 
 menu-1-0 = 
-menu-1-0-exec = i3-msg exit || openbox --exit
+menu-1-0-exec = bspc quit; logout
 
 [module/spotify]
 type = custom/script
 format-margin = 4
 format =    <label>
-exec = playerctl metadata --format '{{artist}}: {{title}}'
+exec = playerctl --player=spotify metadata --format '{{artist}}:    {{title}}'
 tail = true
 interval = 1
-click-left = "playerctl play-pause"
+click-left = "playerctl --player=spotify play-pause"
 
 [settings]
 screenchange-reload = true
