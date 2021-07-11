@@ -68,7 +68,7 @@ modules-left = launcher bspwm xwindow
 scroll-up = bspwm-wsnext
 scroll-down = bspwm-wsprev
 wm-restack = bspwm
- override-redirect = false
+override-redirect = false
 
 [bar/second]
 enable-ipc=true
@@ -178,7 +178,7 @@ label-urgent-font = 2
 
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces = true
+pin-workspaces = false
 format = <label-state>
 format-margin = 4
 index-sort = true
