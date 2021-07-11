@@ -19,9 +19,9 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 killall -q polybar
+compton &
 polybar main &
 polybar second &
-compton &
 ~/.fehbg &
 wmname LG3D
 setxkbmap -model pc104 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
