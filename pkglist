@@ -13,6 +13,7 @@ nautilus
 npm
 nvidia
 otf-san-francisco
+pavucontrol
 pgadmin4
 picom
 playerctl
@@ -21,6 +22,7 @@ pulseaudio
 pycharm-community-edition
 pyenv
 pyenv-virtualenv
+reflector
 spotify
 sxhkd
 ttf-font-awesome
