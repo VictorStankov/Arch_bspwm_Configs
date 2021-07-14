@@ -1,3 +1,4 @@
+
 alacritty
 bspwm
 codeblocks
@@ -10,6 +11,8 @@ git
 google-chrome
 lf
 nautilus
+neovim
+neovim-coc-clangd-git
 npm
 nvidia
 otf-san-francisco
@@ -29,4 +32,3 @@ ttf-font-awesome
 ttf-font-logos
 ttf-material-icons-git
 xorg
-
