@@ -54,8 +54,10 @@ font-2=Material Icons:size=13;4
 font-3=font\-logos:size=10;2
 font-4=FontAwesome5Brands:size=11;1
 font-5=IPAGothic:size=11;3
+font-6=Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular
+font-7=Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid
 
-modules-right = spotify pulseaudio time powermenu
+modules-right = spotify pulseaudio mic-toggle time powermenu
 
 ; i3
 ; modules-left = launcher i3 xwindow
@@ -338,4 +340,17 @@ margin-top = 0
 margin-bottom = 0
 
 ; vim:ft=dosini
+
+[module/mic-toggle]
+type = custom/script
+interval = 1
+
+format-padding = 0
+format-background = ${colors.background}
+
+format-prefix-foreground = ${colors.header}
+
+label = %output:0:40:...%
+exec = ~/.config/polybar/mic-toggle.sh  
+click-left = ~/.config/polybar/mic-toggle.sh --click
 
