@@ -137,4 +137,8 @@ XF86AudioPrev
 	playerctl --player=spotify previous
 
 XF86AudioNext
-	playerctl --player=spotify next 
+	playerctl --player=spotify next
+
+# Mic Toggle
+ctrl + m
+	amixer -q -D "default:2" sset Mic toggle
