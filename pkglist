@@ -31,5 +31,6 @@ systemd-numlockontty
 ttf-font-awesome
 ttf-font-logos
 ttf-material-icons-git
+ttf-ubuntu-font-family
 xorg
-
+zathura-pdf-mupdf
