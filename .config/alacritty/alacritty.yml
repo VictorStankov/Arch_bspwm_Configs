@@ -23,4 +23,22 @@ colors:
     magenta: '0xd3869b'
     cyan:    '0x89b482'
     white:   '0xdfbf8e'
- 
+
+font:
+  normal:
+    family: UbuntuMono
+    style: Regular
+
+  bold:
+    family: UbuntuMono
+    style: Bold
+
+  italic:
+    family: UbuntuMono
+    style: Italic
+
+  bold_italic:
+    family: UbuntuMono
+    style: Bold Italic
+
+  size: 14
