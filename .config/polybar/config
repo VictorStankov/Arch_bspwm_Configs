@@ -230,11 +230,14 @@ ramp-signal-color1 = ${colors.color1}
 
 [module/time]
 type = internal/date
-interval = 10
+interval = 1
 format-margin = 4
 
-time = "%H:%M"
+time = "%I:%M %p"
 date = "%d %b"
+
+date-alt = %A, %d %B %Y
+time-alt = %I:%M:%S %p
 
 label = %time% | %date%
 label-background = ${colors.background}
@@ -256,6 +259,7 @@ ramp-volume-0 = ""
 ramp-volume-1 = ""
 ramp-volume-2 = ""
 
+click-right = pavucontrol
 
 label-muted = " muted"   
 label-muted-background = ${colors.background}
