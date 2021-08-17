@@ -8,6 +8,7 @@ firefox
 flameshot
 git
 google-chrome
+i3lock-fancy-dualmonitor
 lf
 nautilus
 neovim
@@ -32,5 +33,6 @@ ttf-font-awesome
 ttf-font-logos
 ttf-material-icons-git
 ttf-ubuntu-font-family
+xautolock
 xorg
 zathura-pdf-mupdf
