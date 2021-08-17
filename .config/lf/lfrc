@@ -136,15 +136,8 @@ map O $mimeopen --ask $f
 # Movement
 map <c-f> :fzf_jump
 map ~ cd ~/
-map gm cd /media
-#map gu cd /run/media/heis
-map gr cd /run
-map gd cd ~/Documents
-#map gl cd ~/Documents/Libros
-#map gp cd ~/Pictures
-map gv cd ~/Videos
-map gM cd ~/Music
-map gD cd ~/Downloads
+map gd cd ~/Downloads
 map gcc cd ~/.config
-map gcs cd ~/.config/sway
-map gcp cd ~/.config/packages
+map gcb cd ~/.config/bspwm
+map gcs cd ~/.config/sxhkd
+map gpc cd ~/Projects/C_stuff/Book
