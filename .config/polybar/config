@@ -57,7 +57,7 @@ font-5=IPAGothic:size=11;3
 font-6=Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular
 font-7=Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid
 
-modules-right = spotify xkeyboard pulseaudio mic-toggle time powermenu
+modules-right = spotify xkeyboard pulseaudio notification-toggle mic-toggle time powermenu
 
 ; i3
 ; modules-left = launcher i3 xwindow
@@ -347,17 +347,20 @@ margin-bottom = 0
 ; vim:ft=dosini
 
 [module/mic-toggle]
-type = custom/script
-interval = 1
+type = custom/ipc
+format-margin = 2
+hook-0 = echo 
+hook-1 = echo 
+click-left = ~/.config/polybar/mic-toggle.sh
+initial = 2
 
-format-padding = 0
-format-background = ${colors.background}
-
-format-prefix-foreground = ${colors.header}
-
-label = %output:0:40:...%
-exec = ~/.config/polybar/mic-toggle.sh  
-click-left = ~/.config/polybar/mic-toggle.sh --click
+[module/notification-toggle]
+type = custom/ipc
+format-margin = 2
+hook-0 = echo 
+hook-1 = echo 
+click-left = ~/.config/polybar/notification-toggle.sh
+initial = 2
 
 [module/xkeyboard]
 type = internal/xkeyboard

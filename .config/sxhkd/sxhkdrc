@@ -124,6 +124,9 @@ super + {Left,Down,Up,Right}
 ctrl + l
 	xautolock -locker "i3lock-fancy-dualmonitor" -locknow &
 
+ctrl + shift + l
+	xautolock -toggle &
+
 # Media keys
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -145,4 +148,8 @@ XF86AudioNext
 
 # Mic Toggle
 ctrl + m
-	amixer -q -D "default:2" sset Mic toggle
+	~/.config/polybar/mic-toggle.sh
+
+# Notification Toggle
+ctrl + n
+	~/.config/polybar/notification-toggle.sh
