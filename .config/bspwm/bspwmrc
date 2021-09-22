@@ -18,11 +18,10 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-killall -q polybar
-compton &
-polybar main &
-polybar second &
+~/.config/polybar/launch.sh &
 ~/.fehbg &
-wmname LG3D
+compton &
+wmname LG3D  # Fix Java apps
 setxkbmap -model pc104 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
-xautolock -locker "i3lock-fancy-dualmonitor" -time 5 &
+xautolock -locker "i3lock-fancy-dualmonitor" -time 5 -corners "+00-" &
+xsetroot -cursor_name left_ptr &  # Change cursor in bspwm
