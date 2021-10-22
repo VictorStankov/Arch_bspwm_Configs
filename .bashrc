@@ -28,3 +28,5 @@ lfcd () {
     fi
 }
 bind '"\C-e":"lfcd\n"'
+
+export PATH="/home/victor/.deta/bin:$PATH"
