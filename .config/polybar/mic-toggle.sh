@@ -1,11 +1,10 @@
 #!/bin/bash
 
-amixer -q -D "default:2" sset Mic toggle
-STATUS=$(amixer -D "default:2" get Mic | grep -E "\[on\]|\[off\]" | cut -s -d ' ' -f 8 | uniq)
-
-if [[ $STATUS = "[on]" ]]; then
+pactl set-source-mute 2 toggle
+STATUS=$(pactl list sources | grep -A 5 'Description: PRO X Mono' | grep 'Mute' | grep -E -o "yes|no")
+if [[ $STATUS = "no" ]]; then
 	polybar-msg hook mic-toggle 1
-elif [[ $STATUS = "[off]" ]]; then
+elif [[ $STATUS = "yes" ]]; then
 	polybar-msg hook mic-toggle 2
 else
     echo "Not working, check script."
