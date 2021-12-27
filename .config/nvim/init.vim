@@ -1,2 +1,2 @@
-:set ts=4 sw=4 sts=4
+:set ts=8 sw=4 sts=0 smarttab
 :set number relativenumber
