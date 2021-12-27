@@ -23,7 +23,7 @@ bspc rule -a Screenkey manage=off
 compton &
 wmname LG3D  # Fix Java apps
 setxkbmap -model pc104 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
-xautolock -locker "i3lock-fancy-dualmonitor" -time 5 -corners "+00-" &
+xautolock -locker "i3lock-fancy-dualmonitor" -time 1 -corners "+00-" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" -cornerdelay 30 -cornerredelay 30 &
 xsetroot -cursor_name left_ptr &  # Change cursor in bspwm
 killall -9 -q redshift 
 redshift -l $(curl -s "https://location.services.mozilla.com/v1/geolocate?key=geoclue" | awk 'OFS=":" {print $3,$5}' | tr -d ',}') -P &
