@@ -153,3 +153,7 @@ ctrl + m
 # Notification Toggle
 ctrl + n
 	~/.config/polybar/notification-toggle.sh
+
+# Redshift Toggle
+ctrl + k
+	pkill -USR1 redshift
