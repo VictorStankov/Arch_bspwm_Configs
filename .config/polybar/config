@@ -34,8 +34,10 @@ enable-ipc=true
 height = 40
 width = 98%
 offset-x = 1%
+offset-y = 1%
 padding = 5
 ;bottom = true
+radius-top = 15
 radius-bottom = 15
 
 background = ${colors.background}
@@ -78,8 +80,10 @@ enable-ipc=true
 height = 40
 width = 98%
 offset-x = 1%
+offset-y = 1%
 padding = 5
 ;bottom = true
+radius-top = 15
 radius-bottom = 15
 monitor = DP-4
 
@@ -365,8 +369,8 @@ initial = 2
 [module/lockscreen-toggle]
 type = custom/ipc
 format-margin = 2
-hook-0 = echo 󰌾
-hook-1 = echo 󱚱
+hook-0 = echo 
+hook-1 = echo 
 click-left = ~/.config/polybar/lockscreen-toggle.sh
 initial = 2
 
