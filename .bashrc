@@ -28,5 +28,6 @@ lfcd () {
     fi
 }
 bind '"\C-e":"lfcd\n"'
+(cat ~/.cache/wal/sequences &)
 
 export PATH="/home/victor/.deta/bin:$PATH"
