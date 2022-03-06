@@ -20,7 +20,7 @@ bspc rule -a Screenkey manage=off
 
 image=$(cut -d\' -f 2 -s $HOME/.fehbg)
 
-~/.config/polybar/launch.sh &
+~/.config/polybar/launch.sh
 ~/.fehbg &
 wal -i $image -n &
 picom --xrender-sync-fence &
