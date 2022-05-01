@@ -9,7 +9,8 @@ x-scheme-handler/notion=notion-app.desktop
 x-scheme-handler/postman=Postman.desktop
 application/pdf=org.pwmt.zathura.desktop
 x-scheme-handler/webcal=google-chrome.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-7B1X90.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-NW4UI1.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-7B1X90.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-7B1X90.desktop;userapp-Telegram Desktop-NW4UI1.desktop;

@@ -2,6 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+xrandr --output DP-2 --output DP-4 --output HDMI-0 --same-as DP-2
+
 bspc monitor DP-2 -d 1 2 3
 bspc monitor DP-4 -d 4 5 6
 
@@ -26,7 +28,7 @@ wal -i $image -n &
 picom --xrender-sync-fence &
 wmname LG3D  # Fix Java apps
 setxkbmap -model pc104 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
-xautolock -locker "i3lock-fancy-dualmonitor" -time 1 -corners "+00-" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" -cornerdelay 30 -cornerredelay 30 &
+xautolock -locker "i3lock-fancy-dualmonitor" -time 3 -corners "+00-" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" -cornerdelay 30 -cornerredelay 30 &
 xsetroot -cursor_name left_ptr &  # Change cursor in bspwm
 killall -9 -q redshift 
 redshift -l $(curl -s "https://location.services.mozilla.com/v1/geolocate?key=geoclue" | awk 'OFS=":" {print $3,$5}' | tr -d ',}') -P &
