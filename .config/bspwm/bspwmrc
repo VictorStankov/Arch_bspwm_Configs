@@ -25,7 +25,7 @@ image=$(cut -d\' -f 2 -s $HOME/.fehbg)
 ~/.config/polybar/launch.sh
 ~/.fehbg &
 wal -i $image -n &
-picom --xrender-sync-fence &
+picom --xrender-sync-fence --experimental-backend &
 wmname LG3D  # Fix Java apps
 setxkbmap -model pc104 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
 xautolock -locker "i3lock-fancy-dualmonitor" -time 3 -corners "+00-" -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" -cornerdelay 30 -cornerredelay 30 &
