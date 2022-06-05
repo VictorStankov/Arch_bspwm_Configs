@@ -19,8 +19,8 @@ else
 	polybar-msg hook notification-toggle 2
 fi
 
-pactl set-source-mute alsa_input.usb-Logitech_PRO_X_000000000000-00.mono-fallback 1
-STATUS=$(pactl list sources | grep -A 5 'Description: PRO X Mono' | grep 'Mute' | grep -E -o "yes|no")
+pactl set-source-mute  alsa_input.usb-Kingston_HyperX_Quadcast_4110-00.analog-stereo 1
+STATUS=$(pactl list sources | grep -A 5 'Description: HyperX QuadCast Analog Stereo' | grep 'Mute' | grep -E -o "yes|no")
 if [[ $STATUS = "no" ]]; then
 	polybar-msg hook mic-toggle 1
 elif [[ $STATUS = "yes" ]]; then
